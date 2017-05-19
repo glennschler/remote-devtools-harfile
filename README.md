@@ -15,9 +15,17 @@ Stream to file all the HAR entries emitted from [remote-devtools-har](https://gi
 ```
 
 #### Then start this example
+On Windows optionally download the  `devToolsHarFile.exe` contained in the latest [Release](https://github.com/glennschler/remote-devtools-harfile/releases/) instead of installing this repository and it's dependencies.
+
 ```bash
+mkdir logs
 node .
+
+# optionally run the devToolsHarFile.exe
+devToolsHarFile.exe
 ```
+
+Navigate in the Chrome browser. Only the first tab will be captured. Review the `./logs/out.har` file for all the HAR entries which were captured.
 
 #### For reference:
 * [Chrome DevTools Protocol Viewer - Network Domain](https://chromedevtools.github.io/devtools-protocol/tot/Network)
